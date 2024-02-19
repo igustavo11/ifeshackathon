@@ -1,0 +1,324 @@
+
+:root{
+  --green:#49731F;
+  --cor2: #638C26;
+  --cor3:#94BF36;
+}
+
+
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none; border: none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+
+}
+
+section{
+  padding: 2rem 9%;
+}
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color:#666 ;
+  padding: 1rem;
+  margin: 2rem 0;
+
+}
+.heading span{
+  color: #666;
+}
+
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background:var(--cor3);
+  padding: 2rem 9% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo{
+  font-size: 3rem;
+  color: #000000;
+  font-weight: bolder;
+}
+
+header .logo span{
+  color: var(--green);
+
+}
+header .navbar a{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color:#666;
+
+}
+header .navbar a:hover{
+  color: black;
+}
+header #toggler{
+  display: none;
+}
+header .fa-bars{
+  font-size: 3rem;
+  color: #666;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  border: .1rem solid rgba(0, 0, 0, .3);
+  display: none;
+
+}
+ 
+
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    background-color: #f5f5f5;
+    width:  30%;
+  }
+  .texto {
+    text-align: start;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .tela{
+    margin-top: 100px;
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content:space-evenly;
+    /* flex-direction: ; */
+    flex-wrap: wrap;
+}
+.tela img{
+  width: 400px;;
+  height: 350px;
+}
+
+/* ================= formulario =============*/
+.formulario{
+  /* border: solid black; */
+  padding: 16px;
+  display: flex;
+
+}
+.contato_direto{
+  display:flex;
+  align-items: center;
+}
+
+.contato_direto > p{
+  font-size: 25px;
+  color: #384f7c;
+  text-align: left;
+  margin-right: 10%
+}
+@media screen and (max-width: 960px){
+  .contato_direto > p{
+    font-size: 18px;
+    margin-right: 5%;
+  }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: none; /* impede o redimensionamento manual */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  /* Efeitos visuais com animação */
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  form {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  input, textarea, button {
+    animation: float 1s ease-in-out infinite alternate;
+  }
+
+  /* fim do formulario */
+
+
+  /* RODA PE */
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: var(--cor3);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display:block ;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a:hover{  
+    color: var(--green);
+    text-decoration: underline;
+}
+.footer .box-container .box img{
+    margin-top: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #666;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+.footer .credit span{
+    color: var(--green);
+}
+
+
+@media (max-width:991px) {
+  html{
+      font-size: 55%;
+  
+  }
+  header{
+      padding: 2rem;
+  }
+  section{
+      padding: 2rem;
+  }
+  .home{
+      background-position: left;
+
+  }
+
+}
+@media (max-width:768px){
+  html .fa-bars{
+      display: block;
+  }
+  header .navbar{
+      position: absolute;
+      top:100% ; left: 0; right: 0;
+      background: var(--cor3);
+      border-top: .1rem solid rgba(0, 0, 0, .1) ;
+     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header #toggler:checked ~ .navbar{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+  }
+
+  header .navbar a{
+      margin: 1.5rem;
+      padding: 1.5rem;
+      background: var(--cor3);
+      border: .1rem solid rgba(0, 0, 0, .1);
+      display: block;
+  }
+  .home .content h3{
+      font-size:5rem ;
+  }
+  .home .content span{
+      font-size:2.5rem ;
+  }
+}
+@media (max-width:450px){
+  html{
+      font-size: 45%;
+  }
+  .heading{
+      font-size:3rem; 
+  }
+}
